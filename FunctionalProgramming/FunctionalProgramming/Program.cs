@@ -11,6 +11,8 @@ namespace FunctionalProgramming
             Console.WriteLine("Enter 2 for Swapping two numbers");
             Console.WriteLine("Enter 3 for to check Odd or Even");
             Console.WriteLine("Enter 4 for to check Vowel or Consonent");
+            Console.WriteLine("Enter 5 for to check Largest of 3 numbers");
+
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -25,6 +27,9 @@ namespace FunctionalProgramming
                     break;
                 case 4:
                     VowelConsonent character = new VowelConsonent();
+                    break;
+                case 5:
+                    LargestOf3Numbers largestNumber = new LargestOf3Numbers();
                     break;
                 default:
                     Console.WriteLine("Enter the Valid Number");
